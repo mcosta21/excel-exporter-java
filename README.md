@@ -59,11 +59,7 @@ public @interface ExportableField {
 
 <p>
 
-All attributes with <strong>@ExportableField</strong> annotation will be exportable,
-
-and value passed on <strong>name</strong> attribute will appear on Excel file, if doesn't setting,
-
-the default value shown will be the variable name.
+All attributes with <strong>@ExportableField</strong> annotation will be exportable, and value passed on <strong>name</strong> attribute will appear on Excel file, if doesn't setting, the default value shown will be the variable name.
 
 </p>
 
