@@ -1,4 +1,4 @@
-package com.onpractice.excelexporterspring.model;
+package com.mcosta21.excelexporterspring.model;
 
 import lombok.Data;
 
@@ -7,6 +7,7 @@ public class Stock {
 
     private Long id;
 
+    @ExportableField
     private String description;
 
     public Stock(Long id, String description) {

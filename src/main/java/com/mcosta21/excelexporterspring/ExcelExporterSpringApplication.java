@@ -1,4 +1,4 @@
-package com.onpractice.excelexporterspring;
+package com.mcosta21.excelexporterspring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

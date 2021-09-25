@@ -1,4 +1,4 @@
-package com.onpractice.excelexporterspring.config;
+package com.mcosta21.excelexporterspring.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;

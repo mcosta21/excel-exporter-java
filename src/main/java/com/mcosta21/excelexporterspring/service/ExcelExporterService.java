@@ -1,6 +1,6 @@
-package com.onpractice.excelexporterspring.service;
+package com.mcosta21.excelexporterspring.service;
 
-import com.onpractice.excelexporterspring.model.ExportableField;
+import com.mcosta21.excelexporterspring.model.ExportableField;
 import lombok.Setter;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
@@ -110,18 +110,16 @@ public class ExcelExporterService {
         for(var i = 0; i < fields.size(); i++){
             var field = fields.get(i);
             var annotation = field.getAnnotation(ExportableField.class);
-            createCell(row, i, annotation.name().isBlank() ? field.getName() : annotation.name(), style);
+            createCell(row, i, annotation == null || annotation.name().isBlank() ? field.getName() : annotation.name(),
+                    style);
         }
     }
 
     private List<Field> getFields(Class<?> className) {
         List<Field> fields = new ArrayList<Field>();
         ReflectionUtils.doWithFields(className, field -> {
-
             field.setAccessible(true);
-
             var annotation = field.getAnnotation(ExportableField.class);
-
             if(annotation != null) {
                 fields.add(field);
             }

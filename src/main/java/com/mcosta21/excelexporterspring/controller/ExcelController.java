@@ -1,11 +1,11 @@
-package com.onpractice.excelexporterspring.controller;
+package com.mcosta21.excelexporterspring.controller;
 
-import com.onpractice.excelexporterspring.model.Category;
-import com.onpractice.excelexporterspring.model.Product;
-import com.onpractice.excelexporterspring.model.ProductResponse;
-import com.onpractice.excelexporterspring.model.Stock;
-import com.onpractice.excelexporterspring.service.ExcelExporterService;
-import com.onpractice.excelexporterspring.service.IDataService;
+import com.mcosta21.excelexporterspring.model.Category;
+import com.mcosta21.excelexporterspring.model.Product;
+import com.mcosta21.excelexporterspring.model.Stock;
+import com.mcosta21.excelexporterspring.service.ExcelExporterService;
+import com.mcosta21.excelexporterspring.service.IDataService;
+import com.mcosta21.excelexporterspring.model.ProductResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -51,13 +52,6 @@ public class ExcelController {
 
         ExcelExporterService excelExporterService = new ExcelExporterService();
         excelExporterService.export(response, "Produtos", products);
-    }
-
-    @GetMapping("/export/categories")
-    public void exportCategories(HttpServletResponse response) throws IOException, IllegalAccessException {
-        var categories = Category.values();
-        ExcelExporterService excelExporterService = new ExcelExporterService();
-        excelExporterService.export(response, "Categorias", categories);
     }
 
     @GetMapping("/export/stocks")

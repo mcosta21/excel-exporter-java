@@ -8,7 +8,7 @@
 		<version>2.5.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.onpractice</groupId>
+	<groupId>com.mcosta21</groupId>
 	<artifactId>excel-exporter-spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>excel-exporter-spring</name>

@@ -1,4 +1,4 @@
-package com.onpractice.excelexporterspring.model;
+package com.mcosta21.excelexporterspring.model;
 
 public enum Category {
     CLOTHING,

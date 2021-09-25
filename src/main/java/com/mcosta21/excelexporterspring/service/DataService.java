@@ -1,9 +1,9 @@
-package com.onpractice.excelexporterspring.service;
+package com.mcosta21.excelexporterspring.service;
 
-import com.onpractice.excelexporterspring.model.Category;
-import com.onpractice.excelexporterspring.model.Product;
-import com.onpractice.excelexporterspring.model.ProductResponse;
-import com.onpractice.excelexporterspring.model.Stock;
+import com.mcosta21.excelexporterspring.model.Category;
+import com.mcosta21.excelexporterspring.model.Product;
+import com.mcosta21.excelexporterspring.model.ProductResponse;
+import com.mcosta21.excelexporterspring.model.Stock;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
