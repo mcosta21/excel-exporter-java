@@ -102,7 +102,7 @@ public class Product {
 <h3>Dependencies</h3>
 
    - Java 11
-   - Apache POI
+   - Apache POI 5.0.0
 
 </aside>
 
