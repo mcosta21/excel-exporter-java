@@ -96,7 +96,17 @@ public class Product {
 </div>
 
 </aside>
+  
+ <aside>
 
+<h3>Dependencies</h3>
+
+   - Java 11
+   - Apache POI
+
+</aside>
+
+  
 
 <br/>
 
